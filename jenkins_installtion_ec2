@@ -55,8 +55,8 @@ Configure java path
 Manage Jenkins > Global Tool Configuration > JDK
 Create another admin user id
 Test Jenkins Jobs
-Create “new item”
-Enter an item name – My-First-Project
+Create â€œnew itemâ€
+Enter an item name â€“ My-First-Project
 Chose Freestyle project
 Under Build section Execute shell : echo "Welcome to Jenkins Demo"
 Save your job
