@@ -14,6 +14,17 @@ yum install java-1.8*
 Confirm Java Version
 Lets install java and set the java home
 
+Run the file command on that location /etc/alternatives/java.
+
+$ file /etc/alternatives/java
+/etc/alternatives/java: symbolic link to `/usr/lib/jvm/java-8-openjdk.x86_64/bin/java'
+There you go… You’ve now located JAVA config file location which we will use in below steps to set JAVA environment variable
+
+You can re-affirm the location running  file command on the symbolic path:
+
+$ file /usr/lib/jvm/java-8-openjdk.x86_64/bin/java
+/usr/lib/jvm/java-8-openjdk.x86_64/bin/java: ELF 64-bit LSB executable..
+
 java -version
 find /usr/lib/jvm/java-1.8* | head -n 3
 #JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
