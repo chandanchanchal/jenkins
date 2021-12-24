@@ -26,8 +26,10 @@ $ file /usr/lib/jvm/java-8-openjdk.x86_64/bin/java
 /usr/lib/jvm/java-8-openjdk.x86_64/bin/java: ELF 64-bit LSB executable..
 
 java -version
-find /usr/lib/jvm/java-1.8* | head -n 3
+#find /usr/lib/jvm/java-1.8* | head -n 3
 #JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
+nano  ~/.bash_profile 
+# add JAVA_HOME to above file
 export JAVA_HOME
 PATH=$PATH:$JAVA_HOME
 # To set it permanently update your .bash_profile
